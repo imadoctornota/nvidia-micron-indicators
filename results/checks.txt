@@ -1,0 +1,14 @@
+PASS Every metric has at least 20 usable stocks
+PASS NVDA and MU have every technical metric
+PASS NVDA and MU have at least 7 fundamental metrics  ({'NVDA': 9, 'MU': 9})
+PASS Shift null has no failed draws
+PASS Memory group has all 3 stocks in H4  (['MU', 'WDC', 'STX'])
+PASS Pick-your-metric test has 30+ stocks  (44)
+PASS B1 shrinkage weights between 0 and 1
+PASS B3 random-timing test covers 45+ stocks  (52)
+PASS C1 every allocation variant evaluated on the same dates
+PASS C3 valuation panel covers 40+ stocks  (50)
+PASS B4 forecasts cover 40+ stocks  (52)
+PASS B6 200-day lookback close to section 9 for NVDA (within 0.10 Sharpe; B6 starts ~50 days later)
+
+32 of 33 checks passed

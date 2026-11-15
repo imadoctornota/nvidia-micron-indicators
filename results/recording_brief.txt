@@ -1,0 +1,299 @@
+RECORDING BRIEF  (data through 2026-11-06, 52 stocks, 19 metrics, 10 bps per switch)
+
+1) THE HOOK: what each metric says about NVIDIA and Micron right now
+   Price above 200-day average            NVDA OFF  | MU OFF 
+   Golden cross (50d > 200d)              NVDA ON   | MU ON  
+   MACD above signal line                 NVDA OFF  | MU OFF 
+   Buy RSI < 30, sell RSI > 50            NVDA ON   | MU ON  
+   Sell RSI > 70, rebuy RSI < 50          NVDA ON   | MU ON  
+   Buy below lower Bollinger band         NVDA ON   | MU ON  
+   Buy 10% off 20-day high (hold 20d)     NVDA ON   | MU ON  
+   12-month momentum positive             NVDA ON   | MU ON  
+   Within 10% of 52-week high             NVDA OFF  | MU OFF 
+   Beating SMH over 6 months              NVDA ON   | MU ON  
+   P/E below its 5-year median            NVDA ON   | MU ON  
+   P/E under 20                           NVDA OFF  | MU ON  
+   P/S below its 5-year median            NVDA ON   | MU OFF 
+   FCF yield above its 5-year median      NVDA ON   | MU ON  
+   PEG under 1                            NVDA ON   | MU ON  
+   Revenue growth accelerating            NVDA ON   | MU ON  
+   Gross margin up year over year         NVDA ON   | MU ON  
+   Inventory days falling                 NVDA OFF  | MU OFF 
+   Hold 3 months after EPS up vs last year NVDA ON   | MU ON  
+
+2) NVDA: which rules beat buy & hold on Sharpe (95% interval above 0)?
+   none
+   Effects with q < 0.05 among this stock's 19: 0
+   Best by Sharpe: Price above 200-day average: Sharpe 1.02 vs 0.86 hold, CAGR +38.7% vs +37.1%, max DD -53.7% vs -85.1%, timing alpha vs holding NVDA +13.5% (t 2.6)
+   Price above 200-day average: max drawdown -53.7% vs -85.1% holding; CAGR +38.7% vs +37.1%
+   Golden cross (50d > 200d): max drawdown -56.0% vs -85.1% holding; CAGR +35.7% vs +37.1%
+
+2) MU: which rules beat buy & hold on Sharpe (95% interval above 0)?
+   none
+   Effects with q < 0.05 among this stock's 19: 0
+   Best by Sharpe: Beating SMH over 6 months: Sharpe 0.77 vs 0.60 hold, CAGR +25.8% vs +21.8%, max DD -55.7% vs -90.9%, timing alpha vs holding MU +13.1% (t 2.4)
+   Price above 200-day average: max drawdown -56.8% vs -90.9% holding; CAGR +22.8% vs +20.9%
+   Golden cross (50d > 200d): max drawdown -65.1% vs -90.9% holding; CAGR +25.0% vs +20.9%
+
+3) ACROSS ALL STOCKS: does any metric work at all? (naive z treats stocks as independent; p uses the shift test)
+   Buy 10% off 20-day high (hold 20d)     pooled +15.5%/yr  naive z +5.98  honest p 0.053  q 0.190
+   P/S below its 5-year median            pooled +23.1%/yr  naive z +5.35  honest p 0.013  q 0.146
+   Buy RSI < 30, sell RSI > 50            pooled +21.9%/yr  naive z +4.95  honest p 0.023  q 0.146
+   Buy below lower Bollinger band         pooled +16.4%/yr  naive z +4.60  honest p 0.059  q 0.190
+   FCF yield above its 5-year median      pooled +15.2%/yr  naive z +3.84  honest p 0.019  q 0.146
+   Sell RSI > 70, rebuy RSI < 50          pooled +10.1%/yr  naive z +3.16  honest p 0.223  q 0.364
+   Inventory days falling                 pooled +6.1%/yr  naive z +1.99  honest p 0.131  q 0.356
+   Revenue growth accelerating            pooled +6.0%/yr  naive z +1.89  honest p 0.230  q 0.364
+   P/E below its 5-year median            pooled -0.6%/yr  naive z -0.14  honest p 0.854  q 0.854
+   P/E under 20                           pooled -3.6%/yr  naive z -0.81  honest p 0.520  q 0.581
+   Hold 3 months after EPS up vs last year pooled -5.0%/yr  naive z -1.71  honest p 0.443  q 0.561
+   Gross margin up year over year         pooled -5.6%/yr  naive z -1.74  honest p 0.339  q 0.460
+   Beating SMH over 6 months              pooled -4.8%/yr  naive z -1.86  honest p 0.304  q 0.444
+   MACD above signal line                 pooled -5.2%/yr  naive z -2.07  honest p 0.481  q 0.571
+   Golden cross (50d > 200d)              pooled -6.1%/yr  naive z -2.12  honest p 0.567  q 0.599
+   PEG under 1                            pooled -8.3%/yr  naive z -2.53  honest p 0.157  q 0.364
+   Price above 200-day average            pooled -11.1%/yr  naive z -3.41  honest p 0.190  q 0.364
+   12-month momentum positive             pooled -10.4%/yr  naive z -3.54  honest p 0.193  q 0.364
+   Within 10% of 52-week high             pooled -14.7%/yr  naive z -5.45  honest p 0.060  q 0.190
+
+4) DOES IT DEPEND ON THE STOCK? (I² vs shuffled data)
+   P/E under 20                           I²   20%  (shuffled 95th pct   40%)  q 0.677
+   Sell RSI > 70, rebuy RSI < 50          I²   18%  (shuffled 95th pct   33%)  q 0.677
+   Price above 200-day average            I²   16%  (shuffled 95th pct   12%)  q 0.196
+   Buy below lower Bollinger band         I²   15%  (shuffled 95th pct    9%)  q 0.196
+   P/E below its 5-year median            I²   14%  (shuffled 95th pct   38%)  q 0.677
+   Revenue growth accelerating            I²   11%  (shuffled 95th pct   37%)  q 0.730
+   Golden cross (50d > 200d)              I²    2%  (shuffled 95th pct   12%)  q 0.580
+   Within 10% of 52-week high             I²    1%  (shuffled 95th pct   26%)  q 0.730
+   Buy RSI < 30, sell RSI > 50            I²    0%  (shuffled 95th pct    0%)  q 0.196
+   MACD above signal line                 I²    0%  (shuffled 95th pct   34%)  q 0.732
+   Buy 10% off 20-day high (hold 20d)     I²    0%  (shuffled 95th pct   27%)  q 0.730
+   Beating SMH over 6 months              I²    0%  (shuffled 95th pct   29%)  q 0.730
+   12-month momentum positive             I²    0%  (shuffled 95th pct    7%)  q 0.730
+   FCF yield above its 5-year median      I²    0%  (shuffled 95th pct   22%)  q 0.730
+   P/S below its 5-year median            I²    0%  (shuffled 95th pct   29%)  q 0.677
+   PEG under 1                            I²    0%  (shuffled 95th pct   34%)  q 0.730
+   Gross margin up year over year         I²    0%  (shuffled 95th pct   39%)  q 0.824
+   Inventory days falling                 I²    0%  (shuffled 95th pct   43%)  q 0.756
+   Hold 3 months after EPS up vs last year I²    0%  (shuffled 95th pct   39%)  q 0.732
+
+5) CAN YOU KNOW IN ADVANCE?
+   Average first-half vs second-half rho across metrics: 0.15 (joint p = 0.003; v1's p = 0.0005)
+   Same with volatility-scaled effects: rho 0.17 (joint p = 0.001)
+   Metrics with persistence q < 0.05: 0 of 19
+   Pick each stock's best technical rule before 2016-01-01: after, it beat buy & hold for 25% of 44 stocks; Sharpe vs hold -0.16; vs a random rule +0.04 (p 0.085)
+   One rule for everyone, biggest pre-2016 effect (Buy RSI < 30, sell RSI > 50): Sharpe vs hold -0.33, beat hold for 7%
+   One rule for everyone, best pre-2016 Sharpe gain (Sell RSI > 70, rebuy RSI < 50): Sharpe vs hold -0.08, beat hold for 30%; stock-specific pick minus this -0.08 (p 0.015)
+   NVDA: would have picked Within 10% of 52-week high; after: Sharpe 0.88 vs hold 1.22
+   MU: would have picked Beating SMH over 6 months; after: Sharpe 0.82 vs hold 0.91
+
+6) THE CYCLICAL P/E TRAP
+   'Cheap' valuation signals: memory -30.0%/yr vs others +9.9%/yr; difference -39.9% (exact p two-sided 0.001, predicted direction 0.000)
+   Correlation with revenue cyclicality: rho -0.34 (p 0.027); NVDA cyclicality percentile 47, MU 79
+   Volatility-scaled: gap -0.87 (exact p 0.002); average t: gap -1.41 (exact p 0.000)
+   Micron now: P/E 9.3 vs its 5-yr median 21.2; gross margin 81% vs 40% a year earlier; TTM EPS growth 877%
+
+7) STRATEGY LEVEL: every rule on all stocks, equal-weight, vs equal-weight buy & hold
+   Inventory days falling                 Sharpe 0.85 vs 0.78 [-0.08, +0.21]  timing alpha +1.5% (t 1.3)  max DD -23.3% vs -43.4%
+   FCF yield above its 5-year median      Sharpe 0.82 vs 0.78 [-0.19, +0.23]  timing alpha +1.6% (t 1.0)  max DD -18.9% vs -44.3%
+   P/S below its 5-year median            Sharpe 0.79 vs 0.80 [-0.36, +0.33]  timing alpha +2.1% (t 1.0)  max DD -19.4% vs -44.1%
+   Revenue growth accelerating            Sharpe 0.79 vs 0.81 [-0.21, +0.18]  timing alpha +0.7% (t 0.4)  max DD -30.9% vs -44.1%
+   Sell RSI > 70, rebuy RSI < 50          Sharpe 0.67 vs 0.73 [-0.15, +0.02]  timing alpha -1.2% (t -0.9)  max DD -64.8% vs -65.9%
+   Golden cross (50d > 200d)              Sharpe 0.66 vs 0.72 [-0.29, +0.19]  timing alpha +1.3% (t 0.5)  max DD -35.5% vs -66.1%
+   Price above 200-day average            Sharpe 0.62 vs 0.72 [-0.34, +0.17]  timing alpha +0.9% (t 0.4)  max DD -28.9% vs -66.1%
+   Beating SMH over 6 months              Sharpe 0.61 vs 0.71 [-0.25, +0.04]  timing alpha -0.9% (t -0.8)  max DD -39.2% vs -65.9%
+   Gross margin up year over year         Sharpe 0.70 vs 0.82 [-0.24, +0.03]  timing alpha -1.3% (t -1.0)  max DD -33.4% vs -44.1%
+   Buy 10% off 20-day high (hold 20d)     Sharpe 0.61 vs 0.72 [-0.24, +0.03]  timing alpha -1.7% (t -1.0)  max DD -60.5% vs -65.9%
+   Hold 3 months after EPS up vs last year Sharpe 0.67 vs 0.79 [-0.30, +0.04]  timing alpha -1.5% (t -1.0)  max DD -32.7% vs -44.1%
+   12-month momentum positive             Sharpe 0.58 vs 0.70 [-0.34, +0.10]  timing alpha -0.6% (t -0.2)  max DD -36.7% vs -66.0%
+   P/E below its 5-year median            Sharpe 0.55 vs 0.75 [-0.48, +0.10]  timing alpha -1.5% (t -0.6)  max DD -32.5% vs -43.9%
+   PEG under 1                            Sharpe 0.58 vs 0.79 [-0.45, +0.04]  timing alpha -1.1% (t -0.8)  max DD -26.5% vs -44.1%
+   P/E under 20                           Sharpe 0.59 vs 0.79 [-0.50, +0.08]  timing alpha -0.7% (t -0.4)  max DD -20.3% vs -44.1%
+   MACD above signal line                 Sharpe 0.50 vs 0.72 [-0.41, -0.01]  timing alpha -1.2% (t -0.6)  max DD -46.1% vs -65.9%
+   Within 10% of 52-week high             Sharpe 0.45 vs 0.70 [-0.59, +0.09]  timing alpha +0.1% (t 0.0)  max DD -20.7% vs -66.1%
+   Buy below lower Bollinger band         Sharpe 0.45 vs 0.72 [-0.52, +0.00]  timing alpha -1.1% (t -0.6)  max DD -38.0% vs -65.9%
+   Buy RSI < 30, sell RSI > 50            Sharpe 0.39 vs 0.73 [-0.65, +0.03]  timing alpha -0.9% (t -0.5)  max DD -33.4% vs -65.9%
+
+   For comparison, just holding SMH (chip ETF) since 2005-10-18: Sharpe 0.64, CAGR +17.9%, max drawdown -64.2%
+
+10) B1 SHRINKAGE: best estimate of each rule on NVDA and MU
+   Metrics where the best estimate keeps more than half of a stock's own result: 0 of 19
+   Price above 200-day average            NVDA alone +40.5%/yr -> best estimate -5.0%/yr | MU alone +31.5%/yr -> best estimate -5.6%/yr
+   Golden cross (50d > 200d)              NVDA alone +29.1%/yr -> best estimate -5.6%/yr | MU alone +38.2%/yr -> best estimate -5.3%/yr
+   P/E below its 5-year median            NVDA alone -49.1%/yr -> best estimate -7.5%/yr | MU alone -77.1%/yr -> best estimate -8.0%/yr
+   Beating SMH over 6 months              NVDA alone +25.5%/yr -> best estimate -4.8%/yr | MU alone +46.9%/yr -> best estimate -4.8%/yr
+
+11) B2 SELECTION BIAS
+   NVDA has the #2 and MU the #15 buy & hold return of 52 stocks
+   200-day rule: correlation between a stock's return and the rule's Sharpe gain rho 0.16 (rough p 0.258)
+   Average rho, technical rules -0.13; fundamental rules -0.26
+
+12) B3 EACH STOCK'S BEST RULE vs 19 RULES WITH RANDOM TIMING
+   Best rule beat random timing (min-p corrected, p < 0.05) for 6 of 52 stocks; luck alone gives ~2.6 (binomial p 0.045; stocks aren't independent, so rough)
+   ...and also beat holding: 6. Which rules: {'ps_cheap_own': 2, 'fcf_cheap_own': 1, 'pe_cheap_own': 1, 'golden_cross': 1, 'peg_below_1': 1}
+   Ignoring that you picked the best of 19: 33 stocks. v3 max-statistic version: 4
+   NVDA: best rule Price above 200-day average (Sharpe +0.16 vs holding); p alone 0.019, p after picking the best of 19 0.292
+   MU: best rule Golden cross (50d > 200d) (Sharpe +0.15 vs holding); p alone 0.001, p after picking the best of 19 0.016
+
+13) B4 COMBINING ALL SIGNALS: same rules for all vs each stock its own (walk-forward from 2011)
+   R² vs the historical average; DM t: positive = bigger errors than that benchmark
+   [technical_10] mean             R² +0.00%  DM t vs mean    —    vs pooled -2.16  IC +nan (t nan)  EW Sharpe 0.88 vs hold 0.88 [-0.00, -0.00]  in market 100%
+   [technical_10] pooled           R² -0.66%  DM t vs mean +2.16  vs pooled    —    IC -0.015 (t -1.3)  EW Sharpe 0.85 vs hold 0.88 [-0.10, +0.02]  in market 94%
+   [technical_10] pooled_stock_avg R² -0.83%  DM t vs mean +2.56  vs pooled +1.42  IC -0.007 (t -0.6)  EW Sharpe 0.84 vs hold 0.88 [-0.11, +0.02]  in market 92%
+   [technical_10] partial          R² -2.39%  DM t vs mean +5.30  vs pooled +5.67  IC +0.027 (t 2.5)  EW Sharpe 0.88 vs hold 0.88 [-0.08, +0.08]  in market 77%
+   [technical_10] partial_12       R² -5.20%  DM t vs mean +8.51  vs pooled +9.34  IC +0.028 (t 2.5)  EW Sharpe 0.89 vs hold 0.88 [-0.06, +0.09]  in market 72%
+   [technical_10] partial_240      R² -1.06%  DM t vs mean +2.90  vs pooled +2.22  IC +0.022 (t 2.0)  EW Sharpe 0.87 vs hold 0.88 [-0.07, +0.06]  in market 86%
+   [technical_10] stock            R² -5.03%  DM t vs mean +8.95  vs pooled +9.23  IC +0.028 (t 2.5)  EW Sharpe 0.88 vs hold 0.88 [-0.07, +0.09]  in market 71%
+   [all_19] mean             R² +0.00%  DM t vs mean    —    vs pooled -2.61  IC +nan (t nan)  EW Sharpe 0.88 vs hold 0.88 [-0.00, -0.00]  in market 100%
+   [all_19] pooled           R² -1.33%  DM t vs mean +2.61  vs pooled    —    IC +0.006 (t 0.5)  EW Sharpe 0.86 vs hold 0.88 [-0.10, +0.04]  in market 88%
+   [all_19] pooled_stock_avg R² -1.52%  DM t vs mean +2.89  vs pooled +1.53  IC +0.010 (t 0.9)  EW Sharpe 0.85 vs hold 0.88 [-0.11, +0.03]  in market 87%
+   [all_19] partial          R² -4.38%  DM t vs mean +5.92  vs pooled +6.64  IC +0.032 (t 2.6)  EW Sharpe 0.87 vs hold 0.88 [-0.08, +0.07]  in market 74%
+   [all_19] partial_12       R² -11.34%  DM t vs mean +11.28  vs pooled +12.83  IC +0.027 (t 2.1)  EW Sharpe 0.88 vs hold 0.88 [-0.08, +0.10]  in market 68%
+   [all_19] partial_240      R² -1.93%  DM t vs mean +3.24  vs pooled +2.58  IC +0.029 (t 2.5)  EW Sharpe 0.86 vs hold 0.88 [-0.09, +0.06]  in market 82%
+   [all_19] stock            R² -10.66%  DM t vs mean +11.71  vs pooled +11.25  IC +0.025 (t 2.0)  EW Sharpe 0.87 vs hold 0.88 [-0.08, +0.08]  in market 67%
+   NVDA mean             Sharpe 1.10 vs hold 1.10, in market 100%
+   MU mean             Sharpe 0.79 vs hold 0.79, in market 100%
+   NVDA pooled           Sharpe 1.03 vs hold 1.10, in market 92%
+   MU pooled           Sharpe 0.73 vs hold 0.79, in market 95%
+   NVDA pooled_stock_avg Sharpe 1.09 vs hold 1.10, in market 97%
+   MU pooled_stock_avg Sharpe 0.67 vs hold 0.79, in market 91%
+   NVDA partial          Sharpe 1.02 vs hold 1.10, in market 79%
+   MU partial          Sharpe 0.63 vs hold 0.79, in market 74%
+   NVDA partial_12       Sharpe 1.10 vs hold 1.10, in market 73%
+   MU partial_12       Sharpe 0.65 vs hold 0.79, in market 70%
+   NVDA partial_240      Sharpe 1.18 vs hold 1.10, in market 89%
+   MU partial_240      Sharpe 0.56 vs hold 0.79, in market 83%
+   NVDA stock            Sharpe 1.06 vs hold 1.10, in market 73%
+   MU stock            Sharpe 0.61 vs hold 0.79, in market 67%
+
+14) B5 YEAR BY YEAR (log excess vs holding; crash years 2008, 2022 named in advance)
+   NVDA         Price above 200-day average    won 5/22 years; total +0.25, from 2008+2022 +1.53, other years -1.28; Sharpe gain +0.16 -> -0.04 without 2008/2022
+   NVDA         Golden cross (50d > 200d)      won 4/22 years; total -0.21, from 2008+2022 +1.53, other years -1.74; Sharpe gain +0.08 -> -0.11 without 2008/2022
+   MU           Price above 200-day average    won 6/22 years; total +0.32, from 2008+2022 +1.28, other years -0.96; Sharpe gain +0.11 -> -0.01 without 2008/2022
+   MU           Golden cross (50d > 200d)      won 9/22 years; total +0.69, from 2008+2022 +1.37, other years -0.69; Sharpe gain +0.15 -> +0.02 without 2008/2022
+   Equal-weight Price above 200-day average    won 5/22 years; total -1.72, from 2008+2022 +0.54, other years -2.26; Sharpe gain -0.10 -> -0.19 without 2008/2022
+   Equal-weight Golden cross (50d > 200d)      won 6/22 years; total -1.38, from 2008+2022 +0.59, other years -1.98; Sharpe gain -0.06 -> -0.16 without 2008/2022
+
+15) B6 IS 200 DAYS SPECIAL? (Sharpe minus holding)
+   NVDA         50d -0.03  100d -0.06  150d +0.10  200d +0.16  250d +0.11
+   MU           50d -0.13  100d +0.18  150d +0.25  200d +0.11  250d +0.08
+   Equal-weight 50d -0.13  100d -0.07  150d -0.07  200d -0.10  250d -0.15
+
+16) B7 TRADING COSTS (Sharpe minus holding at 0 / 10 / 25 / 50 bps)
+   NVDA         Price above 200-day average          +0.17 / +0.16 / +0.14 / +0.11   (4.5 switches/yr)
+   MU           Price above 200-day average          +0.12 / +0.11 / +0.08 / +0.04   (6.2 switches/yr)
+   Equal-weight Price above 200-day average          -0.06 / -0.10 / -0.17 / -0.28   (8.2 switches/yr)
+   NVDA         Golden cross (50d > 200d)            +0.09 / +0.08 / +0.08 / +0.07   (1.0 switches/yr)
+   MU           Golden cross (50d > 200d)            +0.15 / +0.15 / +0.14 / +0.13   (1.2 switches/yr)
+   Equal-weight Golden cross (50d > 200d)            -0.05 / -0.06 / -0.07 / -0.09   (1.5 switches/yr)
+   NVDA         MACD above signal line               -0.31 / -0.37 / -0.46 / -0.61   (20.3 switches/yr)
+   MU           MACD above signal line               -0.19 / -0.25 / -0.33 / -0.47   (19.8 switches/yr)
+   Equal-weight MACD above signal line               -0.10 / -0.21 / -0.38 / -0.66   (20.1 switches/yr)
+   NVDA         Buy RSI < 30, sell RSI > 50          -0.82 / -0.83 / -0.84 / -0.87   (2.3 switches/yr)
+   MU           Buy RSI < 30, sell RSI > 50          -0.22 / -0.24 / -0.26 / -0.29   (3.2 switches/yr)
+   Equal-weight Buy RSI < 30, sell RSI > 50          -0.32 / -0.34 / -0.38 / -0.44   (2.9 switches/yr)
+   NVDA         Buy 10% off 20-day high (hold 20d)   -0.52 / -0.54 / -0.56 / -0.59   (5.0 switches/yr)
+   MU           Buy 10% off 20-day high (hold 20d)   -0.18 / -0.20 / -0.21 / -0.24   (5.7 switches/yr)
+   Equal-weight Buy 10% off 20-day high (hold 20d)   -0.09 / -0.11 / -0.14 / -0.20   (5.4 switches/yr)
+
+17) B8 MEMORY MARGINS (descriptive)
+   Micron TTM gross margin now 81% vs prior peak 60% (2018-12-20); P/E 9.3
+   MU 2015-01-12: margin 34% (prior 5-yr high 33%), P/E 10.2 -> next 12m -59.8% (worst drop -60.4%; SMH -5.5%)
+   MU 2017-10-27: margin 42% (prior 5-yr high 34%), P/E 9.5 -> next 12m -15.2% (worst drop -15.2%; SMH -10.6%)
+   MU 2026-03-20: margin 58% (prior 5-yr high 47%), P/E 20.0 -> still open
+   WDC 2017-05-09: margin 29% (prior 5-yr high 29%), P/E nan -> next 12m -9.7% (worst drop -12.3%; SMH +28.9%)
+   WDC 2025-08-15: margin 38% (prior 5-yr high 31%), P/E 17.0 -> next 12m +562.8% (worst drop -0.5%; SMH +93.3%)
+   STX 2017-08-07: margin 29% (prior 5-yr high 29%), P/E 13.0 -> next 12m +73.1% (worst drop -7.6%; SMH +26.7%)
+   STX 2018-08-06: margin 30% (prior 5-yr high 29%), P/E 13.4 -> next 12m -12.9% (worst drop -31.3%; SMH +4.2%)
+   STX 2025-01-27: margin 32% (prior 5-yr high 30%), P/E 18.8 -> next 12m +336.3% (worst drop -35.2%; SMH +77.2%)
+
+20) C0 EXECUTION ONE DAY LATER (Sharpe minus holding: at the signal close -> next day)
+   NVDA  Price above 200-day average          +0.16 -> +0.15   max DD -53.7% -> -51.9%
+   NVDA  Golden cross (50d > 200d)            +0.08 -> +0.07   max DD -56.0% -> -57.9%
+   NVDA  MACD above signal line               -0.37 -> -0.45   max DD -57.9% -> -70.9%
+   NVDA  12-month momentum positive           -0.10 -> -0.11   max DD -83.3% -> -81.6%
+   NVDA  Beating SMH over 6 months            -0.03 -> -0.03   max DD -62.3% -> -56.0%
+   MU    Price above 200-day average          +0.11 -> +0.09   max DD -56.8% -> -57.8%
+   MU    Golden cross (50d > 200d)            +0.15 -> +0.14   max DD -65.1% -> -65.2%
+   MU    MACD above signal line               -0.25 -> -0.27   max DD -75.8% -> -79.8%
+   MU    12-month momentum positive           +0.15 -> +0.16   max DD -64.8% -> -64.6%
+   MU    Beating SMH over 6 months            +0.17 -> +0.23   max DD -55.7% -> -51.2%
+   Pooled effects that moved most: Buy RSI < 30, sell RSI > 50 +21.9% -> +14.3%; Within 10% of 52-week high -14.7% -> -9.5%; P/E under 20 -3.6% -> -8.6%; P/S below its 5-year median +23.1% -> +18.2%
+
+21) C1 TIMING vs OWNING LESS (real-time weights, same dates)
+   NVDA         Price above 200-day average  rule: CAGR +37.5%, Sharpe 1.00, max DD -53.7%, worst 12m -37.9%
+                                             hold: CAGR +34.5%, Sharpe 0.82, max DD -85.1%, worst 12m -82.8%
+                                             same exposure (68% stock): CAGR +24.6%, Sharpe 0.77, max DD -75.4%, worst 12m -73.2%; rule Sharpe minus this +0.23 [-0.06, +0.53]
+                                             same volatility (70% stock): CAGR +25.8%, max DD -75.1%
+   NVDA         Golden cross (50d > 200d)    rule: CAGR +35.8%, Sharpe 0.95, max DD -56.0%, worst 12m -45.1%
+                                             hold: CAGR +34.5%, Sharpe 0.82, max DD -85.1%, worst 12m -82.8%
+                                             same exposure (68% stock): CAGR +24.7%, Sharpe 0.77, max DD -75.3%, worst 12m -73.1%; rule Sharpe minus this +0.18 [-0.09, +0.45]
+                                             same volatility (73% stock): CAGR +26.2%, max DD -77.2%
+   MU           Price above 200-day average  rule: CAGR +23.9%, Sharpe 0.72, max DD -56.8%, worst 12m -46.7%
+                                             hold: CAGR +21.4%, Sharpe 0.60, max DD -88.7%, worst 12m -79.8%
+                                             same exposure (51% stock): CAGR +14.6%, Sharpe 0.59, max DD -55.4%, worst 12m -42.4%; rule Sharpe minus this +0.14 [-0.18, +0.48]
+                                             same volatility (58% stock): CAGR +14.8%, max DD -67.6%
+   MU           Golden cross (50d > 200d)    rule: CAGR +25.7%, Sharpe 0.76, max DD -65.1%, worst 12m -49.8%
+                                             hold: CAGR +21.4%, Sharpe 0.60, max DD -88.7%, worst 12m -79.8%
+                                             same exposure (52% stock): CAGR +14.3%, Sharpe 0.57, max DD -59.2%, worst 12m -43.4%; rule Sharpe minus this +0.19 [-0.12, +0.49]
+                                             same volatility (59% stock): CAGR +14.7%, max DD -69.1%
+   Equal-weight Price above 200-day average  rule: CAGR +12.1%, Sharpe 0.62, max DD -28.9%, worst 12m -26.0%
+                                             hold: CAGR +21.1%, Sharpe 0.70, max DD -66.1%, worst 12m -60.1%
+                                             same exposure (59% stock): CAGR +13.7%, Sharpe 0.68, max DD -43.5%, worst 12m -37.6%; rule Sharpe minus this -0.07 [-0.35, +0.20]
+                                             same volatility (52% stock): CAGR +11.9%, max DD -40.9%
+   Equal-weight Golden cross (50d > 200d)    rule: CAGR +14.1%, Sharpe 0.66, max DD -35.5%, worst 12m -24.2%
+                                             hold: CAGR +21.1%, Sharpe 0.70, max DD -66.1%, worst 12m -60.1%
+                                             same exposure (60% stock): CAGR +13.8%, Sharpe 0.68, max DD -44.5%, worst 12m -38.6%; rule Sharpe minus this -0.02 [-0.25, +0.23]
+                                             same volatility (56% stock): CAGR +12.7%, max DD -43.7%
+
+22) C2 EVERY SELL SIGNAL
+   NVDA  Price above 200-day average  46 completed sells: 8 helped, 38 cost you (83% false alarms); median 4 trading days out; bought back higher than you sold 83% of the time
+                                      top 3 sells (2008-01-08, 2018-10-11, 2022-04-08) +1.66 log pts; all the others -1.39
+                                      open now since 2026-11-05 (2 days): stock -6.7% while out
+   NVDA  Golden cross (50d > 200d)    10 completed sells: 3 helped, 7 cost you (70% false alarms); median 148 trading days out; bought back higher than you sold 70% of the time
+                                      top 3 sells (2008-02-08, 2018-11-14, 2022-04-21) +1.04 log pts; all the others -1.23
+   MU    Price above 200-day average  64 completed sells: 12 helped, 52 cost you (81% false alarms); median 6 trading days out; bought back higher than you sold 81% of the time
+                                      top 3 sells (2015-02-24, 2008-06-09, 2007-07-27) +1.83 log pts; all the others -1.33
+                                      open now since 2026-11-06 (1 days): stock +5.1% while out
+   MU    Golden cross (50d > 200d)    12 completed sells: 4 helped, 8 cost you (67% false alarms); median 153 trading days out; bought back higher than you sold 67% of the time
+                                      top 3 sells (2006-11-20, 2015-02-26, 2022-04-29) +2.28 log pts; all the others -1.57
+
+23) C3 VALUATION OVER 12 AND 36 MONTHS (cheapest vs most expensive of own history, vs SMH, per year)
+   memory             FCF yield  12 mo: -31.3%/yr (t -1.9, q 0.17; 3 stocks, 137 months)
+   memory             FCF yield  36 mo: -17.5%/yr (t -1.2, q 0.36; 3 stocks, 113 months)
+   memory             P/E        12 mo: -30.2%/yr (t -1.7, q 0.21; 3 stocks, 132 months)
+   memory             P/E        36 mo: +7.4%/yr (t +2.1, q 0.13; 3 stocks, 116 months)
+   memory             P/S        12 mo: -19.4%/yr (t -0.8, q 0.60; 3 stocks, 146 months)
+   memory             P/S        36 mo: +6.8%/yr (t +0.8, q 0.60; 3 stocks, 122 months)
+   other chip stocks  FCF yield  12 mo: -8.4%/yr (t -2.2, q 0.13; 47 stocks, 153 months)
+   other chip stocks  FCF yield  36 mo: -0.0%/yr (t -0.0, q 0.99; 43 stocks, 129 months)
+   other chip stocks  P/E        12 mo: -8.8%/yr (t -2.9, q 0.05; 44 stocks, 152 months)
+   other chip stocks  P/E        36 mo: -9.6%/yr (t -1.6, q 0.23; 41 stocks, 128 months)
+   other chip stocks  P/S        12 mo: -1.2%/yr (t -0.2, q 0.92; 47 stocks, 152 months)
+   other chip stocks  P/S        36 mo: +1.9%/yr (t +0.5, q 0.76; 43 stocks, 128 months)
+   NVDA  FCF yield  next 12m vs SMH: cheap third +nan% (n 0), expensive third +18.0% (n 85)
+   NVDA  P/E        next 12m vs SMH: cheap third +7.3% (n 1), expensive third +26.3% (n 110)
+   NVDA  P/S        next 12m vs SMH: cheap third +nan% (n 0), expensive third +23.7% (n 138)
+   MU    FCF yield  next 12m vs SMH: cheap third -33.6% (n 41), expensive third +5.5% (n 50)
+   MU    P/E        next 12m vs SMH: cheap third -17.6% (n 28), expensive third +31.1% (n 49)
+   MU    P/S        next 12m vs SMH: cheap third +34.3% (n 6), expensive third +6.0% (n 88)
+
+24) D1 OUT OF SAMPLE: THE DOT-COM CRASH, 2000-2004 (30 stocks; prediction written before running)
+   Price above 200-day average  cut max drawdown for 26 of 30 stocks (median -69.7% vs -86.6% holding); beat holding on Sharpe for 16 of 30 (rough sign-test p 0.428)
+   Golden cross (50d > 200d)    cut max drawdown for 28 of 30 stocks (median -67.9% vs -86.6% holding); beat holding on Sharpe for 13 of 30 (rough sign-test p 0.819)
+   Equal-weight Price above 200-day average  CAGR +7.0% vs +6.1%; Sharpe 0.29 vs 0.32 [-0.70, +0.57]; max DD -48.7% vs -75.3%
+   Equal-weight Golden cross (50d > 200d)    CAGR +8.3% vs +6.1%; Sharpe 0.33 vs 0.32 [-0.55, +0.57]; max DD -46.7% vs -75.3%
+   NVDA  Price above 200-day average  CAGR +28.0% vs +15.0%; max DD -53.9% vs -89.7%; Sharpe 0.65 vs 0.57; 16 sells
+   NVDA  Golden cross (50d > 200d)    CAGR +18.3% vs +15.0%; max DD -69.6% vs -89.7%; Sharpe 0.54 vs 0.57; 3 sells
+   MU    Price above 200-day average  CAGR -10.2% vs -20.6%; max DD -75.4% vs -93.0%; Sharpe -0.14 vs -0.00; 25 sells
+   MU    Golden cross (50d > 200d)    CAGR -7.7% vs -20.6%; max DD -78.6% vs -93.0%; Sharpe -0.01 vs -0.00; 4 sells
+
+18) SINCE THE HUANG REPORT (descriptive, one event, not a test)
+   NVDA 2026-10-28 to 2026-11-06: -13.3% vs SMH -18.3% (gap +4.9%), vs beta x SPY -4.6%
+   MU 2026-10-28 to 2026-11-06: -29.8% vs SMH -18.3% (gap -11.6%), vs beta x SPY -16.3%
+
+19) SURVIVORSHIP NOTES
+   QRVO: acquired by Skyworks Oct 5, 2026 (0.960 SWKS + $32.50 cash), delisted; no free price history
+   P: Everpure, formerly Pure Storage (PSTG until Apr 17, 2026)
+
+Checks: 32 of 33 passed
